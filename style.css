@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230515/pngtree-in-the-style-of-dreamy-realism-image_2565791.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgb(131, 7, 140);
+}
+
+.card-header{
+    background: #2c3a47;
+    padding: 60px 40px;
+}
+
+.picture img{
+    width: 100px;
+    display: block;
+    border-radius: 50%;
+}
+.picture{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg,#74b8,#492b);
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes animasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+.name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.desc{
+    font-size: 18px;
+    color: #e66767;
+}
+.sm{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sm a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: 0.8s linear;
+}
+.sm a:hover{
+    color: #e66767;
+}
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #e66767;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.8s linear;
+}
+.contact-btn:hover{
+    background: #e66767;
+    color: white;
+}
+
+.card-footer{
+    background-color: floralwhite;
+    padding: 60px 10px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.item{
+    font-size: 13px;
+    flex: 1;
+}
+.item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+}
